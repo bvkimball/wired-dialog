@@ -1,6 +1,6 @@
 {
   "name": "@bvkimball/wired-dialog",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Hand-drawn sketchy dialog - web component",
   "source": "src/wired-dialog.ts",
   "main": "lib/wired-dialog.js",
@@ -12,7 +12,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/wiredjs/wired-elements.git"
+    "url": "git+https://github.com/bvkimball/wired-dialog.git"
   },
   "keywords": [
     "dialog",
