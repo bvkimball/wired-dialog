@@ -1,0 +1,49 @@
+<html>
+  <head>
+    <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah&display=swap" rel="stylesheet" />
+    <script src="//unpkg.com/wired-elements@latest/dist/wired-elements.bundled.js"></script>
+    <script type="module" src="../lib/wired-toast.mjs"></script>
+    <style>
+      body {
+        margin: 0;
+        padding: 10px;
+        font-family: "Gloria Hallelujah", sans-serif;
+        line-height: 1.5;
+      }
+    </style>
+  </head>
+  <body>
+    <body>
+      <!-- Buttons -->
+      <wired-button id="btnOne">Open One</wired-button>
+      <wired-button id="btnTwo">Open Two</wired-button>
+      
+      <!-- Dialogs -->
+      <wired-dialog name="one">
+        <h4>Dialog 1</h4>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+          veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+          commodo consequat.
+        </p>
+      </wired-dialog>
+      <wired-dialog name="two">
+        <h4>Dialog 2</h4>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+          veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+          commodo consequat.
+        </p>
+      </wired-dialog>
+  
+      <script type="module">
+        import { openDialog } from "../lib/wired-dialog.mjs";
+        const uno = document.getElementById("btnOne");
+        const dos = document.getElementById("btnTwo");
+        uno.addEventListener("click", () => openDialog("one"));
+        dos.addEventListener("click", () => openDialog("two"));
+      </script>
+    </body>
+  </html>
