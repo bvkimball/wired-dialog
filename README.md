@@ -1,4 +1,4 @@
-![wired dialog](https://wiredjs.github.io/wired-elements/images/dialog.png)
+![wired dialog](https://rawcdn.githack.com/bvkimball/wired-dialog/defa4188750145578cb76f2329827b16a2bdafab/example/wired-dialog.gif)
 
 # wired-dialog
 
